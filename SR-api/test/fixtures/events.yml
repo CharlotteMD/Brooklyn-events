@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  areasCovered: MyText
+  directions: MyText
+  name: MyString
+  transportStation: MyText
+  longDate: 2018-05-16 14:45:26
+  day: MyString
+  start: MyString
+  end: MyString
+  city: MyString
+  address: MyText
+  geoloc: MyString
+  zip: MyString
+
+two:
+  areasCovered: MyText
+  directions: MyText
+  name: MyString
+  transportStation: MyText
+  longDate: 2018-05-16 14:45:26
+  day: MyString
+  start: MyString
+  end: MyString
+  city: MyString
+  address: MyText
+  geoloc: MyString
+  zip: MyString

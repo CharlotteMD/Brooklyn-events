@@ -1,0 +1,125 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+form {
+  max-width: 45%;
+  padding: 20px;
+  border: thin lightgrey solid;
+  margin-bottom: 30px;
+}
+
+.info {
+  max-width: 45%;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #003d5d;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "open sans", sans-serif;
+}
+
+nav {
+  background-color: #003d5d;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+}
+
+nav a {
+  color: white;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: arial, sans-serif;
+  color: #003d5d;
+  font-weight: bold;
+}
+
+.bar {
+  background-image: url("./assets/bar-photo.jpg");
+  height: 300px;
+  background-position: center;
+  margin: 0px 20px;
+}
+
+.bar p {
+  color: #5e5e5e;
+  font-size: 15px;
+  font-family: arial, sans-serif;
+}
+
+.bar a {
+  color: #3480da;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+}
+
+.mapInfo {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+  margin-left: 150px;
+  height: 90%;
+}
+
+.btn {
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+label {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #003d5d;
+  height: 100px;
+}
+
+#bringID {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.info p {
+  font-size: 15px;
+  /* font-weight: bold; */
+
+}
+
+.info h4 {
+  font-weight: bold;
+  color: #003d5d;
+  font-size: 18px;
+  font-family: arial, sans-serif;
+}
+
+.googlemap {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 300px) {
+
+    body {
+      max-width: 300px;
+    }
+
+    form {
+      max-width: 100%;
+    }
+
+    .info {
+      max-width: 100%;
+    }
+}

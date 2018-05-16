@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="./event.json"></script>
+            <script type="text/javascript" >
+               function load() {
+                    var event = JSON.parse(data);
+
+                    var div = document.getElementById('data');
+
+                    div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ event[i].areas-covered +"</p>" + "<br>";
+
+                }
+       </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>SpeedRoomMating Brooklyn</title>
+  </head>
+  <body onload="load()">
+   <div id= "data">
+   </div>
+
+    <header>
+
+      <img src="./assets/logo.png" alt="SpareRoom logo" class="logo">
+
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Events</a>
+              <a class="dropdown-item" href="#">Events</a>
+              <a class="dropdown-item" href="#">Events</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <h1>SpeedRoomMating Brooklyn @ Matt Torrey's</h1>
+      <div class="bar">
+        <div class="mapInfo">
+          <h5>Matt Torrey's</h5>
+          <p>Date</p>
+          <p>Times</p>
+
+          <div class="googleMap">
+            <iframe
+              width="100"
+              height="100"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBU4PJCYlrrZ6xnIsK87gncaVvKSqLIaSQ
+                &q=Space+Needle,Seattle+WA" allowfullscreen>
+            </iframe>
+          </div>
+
+          <a href="#">Venue's Map & Directions</a>
+
+        </div>
+      </div>
+
+
+      <section>
+
+        <form>
+          <h3>Reserve Your Place Now</h3>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="need" id="need" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              I need a room
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="have" id="have" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              I have a room
+            </label>
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="text" aria-describedby="emailHelp" placeholder="Please enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your email address">
+            <small id="emailHelp" class="form-text text-muted">
+              We won't give your email address to anyone else. See our <a href="#" alt="Privacy Policy">Privacy Policy</a>
+            </small>
+          </div>
+          <hr>
+          <button type="submit" class="btn btn-primary">Book</button>
+          <small id="bringID" class="form-text text-muted">
+            All our events are in licensed venues, so bring some ID just in case you're lucky enough to be asked your age!
+          </small>
+        </form>
+
+        <div class="info">
+          <h4>Who is the event for?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h4>What areas does this event cover?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h4>Venue Directions</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h4>Nearest Subway</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div className="googlmap">
+            <iframe
+              width="500"
+              height="450"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBU4PJCYlrrZ6xnIsK87gncaVvKSqLIaSQ
+                &q=Space+Needle,Seattle+WA" allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+    </footer>
+
+  </body>
+</html>
